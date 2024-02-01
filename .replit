@@ -1,0 +1,7 @@
+run = "npm start"
+entrypoint = "main.sh"
+
+[deployment]
+deploymentTarget = "gce"
+ignorePorts = true
+run = ["sh", "-c", "npm start"]
